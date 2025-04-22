@@ -112,6 +112,66 @@
     width: 4in;
     height: 50pt;
   }
+  * {
+    box-sizing: border-box;
+  }
+  
+  article {
+    padding: 1rem;
+  }
+  
+  .note {
+    background: yellow;
+  }
+  
+  #main-header {
+    font-size: 2rem;
+  }
+  
+  input[type="date"] {
+    border: 1px solid #ccc;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  h2, h3, h4 {
+    margin-bottom: 0.5rem;
+  }
+  
+  header nav p {
+    font-style: italic;
+  }
+  
+  ul > li {
+    list-style: square;
+  }
+  
+  h2 ~ p {
+    color: gray;
+  }
+  
+  h2 + hr {
+    border-top: 2px solid #333;
+  }
+  
+  button.primary {
+    background: blue;
+    color: white;
+  }
+  
+  form:has(input:focus) {
+    border: 2px solid green;
+  }
+  
+  .section-wrapper {
+    padding: 1rem;
+    & .internal-demo {
+      font-style: normal;
+      background: lightblue;
+    }
+  }
   
   @media (max-width: 600px) {
     body {
